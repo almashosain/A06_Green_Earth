@@ -13,7 +13,7 @@
 </head>
 <body>
   <!-- Navigation Bar  -->
-   <div class="navbar bg-base-100 shadow-sm">
+   <div class="navbar bg-base-100 shadow-sm bg-[#15803D] text-white md:px-[60px] md:py-[15px] ">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -21,38 +21,128 @@
       </div>
       <ul
         tabindex="0"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-black">
+        <li><a>About</a></li>
         <li>
-          <a>Parent</a>
-          <ul class="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
+          <a>Gallery</a>
         </li>
-        <li><a>Item 3</a></li>
+        <li><a>Plant a Tree</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost text-xl">daisyUI</a>
+    <p class="text-3xl font-bold">Green Earth</p>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
+      <li><p>About</p></li>
       <li>
-        <details>
-          <summary>Parent</summary>
-          <ul class="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
+        <p >Gallery</p>
       </li>
-      <li><a>Item 3</a></li>
+      <li>
+        <p>Plant a Tree</p>
+      </li>
     </ul>
   </div>
-  <div class="navbar-end">
-    <a class="btn">Button</a>
+  <div class="navbar-end ">
+    <a class="btn bg-[#FAD915] text-[#15803D] border-0 rounded-4xl ">Plant a Tree</a>
   </div>
 </div>
+
+<!-- Banner Section  -->
+
+<section class="flex flex-col md:flex-row  bg-[#CFF0DC]">
+    <div><img class="w-24 md:w-auto mx-auto -mb-[200px]" src="./assets/hero-leaf1.png" alt=""></div>
+    <div class="justify-center items-center text-center"><h1 class="text-4xl font-bold mt-[100px]">
+        <h1 class="text-4xl font-bold">Plant a Tree, Grow a Future</h1>
+        <p class="text-[#1F293780] mt-[5px]">Join our mission to plant 1 million trees and make the Earth greener for future
+generations.</p>
+<button class="md:mt-[40px] mt-[10px]  bg-[#FACC15] py-[12px] px-[20px] text-[#15803D] rounded-4xl">Get Involved</button>
+    </div>
+    <div><img class="w-24 md:w-auto mx-auto md:mt-[0] mt-6" src="./assets/hero-leaf2.png" alt=""></div>
+</section>
+
+<!-- Choose Your Tree  -->
+
+<section class="bg-[#F0FDF4] h-screen gap-[30px] p-[30px]">
+
+<h1 class="font-semibold text-2xl flex justify-center items-center pt-[100px]">Choose Your Trees</h1>
+<section class="mx-[40pxpx]  h-screen">
+<div class="grid grid-cols-1 md:grid-cols-[1fr_3fr_1fr]">
+
+<!-- Left  -->
+<div class="space-y-[16px] p-2">
+<h2>Categories</h2>
+<p class="bold text-white bg-[#15803D] w-[200px] rounded-[5px] py-[8px] px-[10px] ">All Trees</p>
+<div class="ml-[5px]">
+<button class="hover:bg-green-600 hover:text-white hover:rounded-lg w-[200px] h-[40px] flex items-start">Fruit Trees</button> <br>
+<button class="hover:bg-green-600 hover:text-white hover:rounded-lg w-[200px] h-[40px] flex items-start">Flowering Trees</button> <br>
+<button class="hover:bg-green-600 hover:text-white hover:rounded-lg w-[200px] h-[40px] flex items-start">Shade Trees</button> <br>
+<button class="hover:bg-green-600 hover:text-white hover:rounded-lg w-[200px] h-[40px] flex items-start">Medicinal Trees</button> <br>
+<button class="hover:bg-green-600 hover:text-white hover:rounded-lg w-[200px] h-[40px] flex items-start">Timber Trees</button> <br>
+<button class="hover:bg-green-600 hover:text-white hover:rounded-lg w-[200px] h-[40px] flex items-start">Evergreen Trees</button> <br>
+<button class="hover:bg-green-600 hover:text-white hover:rounded-lg w-[200px] h-[40px] flex items-start">Ornamental Plants</button> <br>
+<button class="hover:bg-green-600 hover:text-white hover:rounded-lg w-[200px] h-[40px] flex items-start">Bamboo</button> <br>
+<button class="hover:bg-green-600 hover:text-white hover:rounded-lg w-[200px] h-[40px] flex items-start">Climbers</button> <br>
+<button class="hover:bg-green-600 hover:text-white hover:rounded-lg w-[200px] h-[40px] flex items-start">Aquatic Plants</button>
+</div>
+</div>
+<!-- Middle  -->
+<div class="">
+
+  <!-- Middle Section Cards -->
+<div class="grid grid-cols-1  md:grid-cols-3 gap-6 px-2">
+  <!-- Card One -->
+  <div class="bg-white rounded-lg  p-[16px] flex flex-col">
+    <img class="w-full aspect-[16/9] object-cover rounded-lg" src="./assets/about.png" alt="Mango Tree">
+    <h2 class="font-bold mt-3 text-lg">Mango Tree</h2>
+    <p class="text-[12px] text-[#1F2937] mt-2">A fast-growing tropical tree that produces delicious, juicy mangoes during summer.</p>
+    <div class="flex justify-between items-center mt-2">
+      <button class="bg-[#DCFCE7] text-[#15803D] p-1 rounded-lg text-xs">Fruit Tree</button>
+      <p class="text-sm font-semibold">৳500</p>
+    </div>
+    <button class="w-full rounded-3xl text-white mt-4 bg-[#15803D] py-2 px-4">Add to Cart</button>
+  </div>
+
+  <!-- Card Two -->
+  <div class="bg-white rounded-lg  p-[16px] flex flex-col">
+    <img class="w-full aspect-[16/9] object-cover rounded-lg" src="./assets/about.png" alt="Mango Tree">
+    <h2 class="font-bold mt-3 text-lg">Mango Tree</h2>
+    <p class="text-[12px] text-[#1F2937] mt-2">A fast-growing tropical tree that produces delicious, juicy mangoes during summer.</p>
+    <div class="flex justify-between items-center mt-2">
+      <button class="bg-[#DCFCE7] text-[#15803D] p-1 rounded-lg text-xs">Fruit Tree</button>
+      <p class="text-sm font-semibold">৳500</p>
+    </div>
+    <button class="w-full rounded-3xl text-white mt-4 bg-[#15803D] py-2 px-4">Add to Cart</button>
+  </div>
+
+  <!-- Card Three -->
+  <div class="bg-white rounded-lg  p-[16px] flex flex-col">
+    <img class="w-full aspect-[16/9] object-cover rounded-lg" src="./assets/about.png" alt="Mango Tree">
+    <h2 class="font-bold mt-3 text-lg">Mango Tree</h2>
+    <p class="text-[12px] text-[#1F2937] mt-2">A fast-growing tropical tree that produces delicious, juicy mangoes during summer.</p>
+    <div class="flex justify-between items-center mt-2">
+      <button class="bg-[#DCFCE7] text-[#15803D] p-1 rounded-lg text-xs">Fruit Tree</button>
+      <p class="text-sm font-semibold">৳500</p>
+    </div>
+    <button class="w-full rounded-3xl text-white mt-4 bg-[#15803D] py-2 px-4">Add to Cart</button>
+  </div>
+</div>
+
+
+</div>
+
+ <!-- Right  -->
+ <div class="bg-white gap-[30px] -mr-[10px] w-full max-w-[250px] mx-auto">
+  <h1>Your Cart</h1>
+  <div></div>
+
+ </div>
+
+</div>
+</section>
+</section>
+<!-- Test  -->
+
+
+
 </body>
 </html>
