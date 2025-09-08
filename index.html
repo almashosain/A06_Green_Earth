@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Green Earth</title>
     <!-- DaisyUI CDN -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 
@@ -49,61 +49,62 @@
 
 <!-- Banner Section  -->
 
-<section class="flex flex-col md:flex-row  bg-[#CFF0DC]">
-    <div><img class="w-24 md:w-auto mx-auto -mb-[200px]" src="./assets/hero-leaf1.png" alt=""></div>
-    <div class="justify-center items-center text-center"><h1 class="text-4xl font-bold mt-[100px]">
-        <h1 class="text-4xl font-bold">Plant a Tree, Grow a Future</h1>
-        <p class="text-[#1F293780] mt-[5px]">Join our mission to plant 1 million trees and make the Earth greener for future
-generations.</p>
-<button class="md:mt-[40px] mt-[10px]  bg-[#FACC15] py-[12px] px-[20px] text-[#15803D] rounded-4xl">Get Involved</button>
-    </div>
-    <div><img class="w-24 md:w-auto mx-auto md:mt-[0] mt-6" src="./assets/hero-leaf2.png" alt=""></div>
+<section class="flex flex-col md:flex-row items-center justify-center bg-[#CFF0DC] p-4 md:p-0">
+  <img class="w-24 md:w-auto mx-auto -mb-20 md:mb-0" src="./assets/hero-leaf1.png" alt="">
+  <div class="text-center  md:text-left md:mx-10 mt-6 md:mt-0">
+    <h1 class="text-3xl mt-[90px] md:text-4xl font-bold">Plant a Tree, Grow a Future</h1>
+    <p class="text-[#1F293780] mt-2 md:mt-4">Join our mission to plant 1 million trees and make the Earth greener for future generations.</p>
+    <button class="mt-4 md:mt-10 bg-[#FACC15] py-3 px-6 text-[#15803D] rounded-full">Get Involved</button>
+  </div>
+  <img class="w-24 md:w-auto mx-auto mt-6 md:mt-0" src="./assets/hero-leaf2.png" alt="">
 </section>
 
 <!-- Choose Your Tree  -->
 
-<section class="bg-[#F0FDF4] h-screen gap-[30px] p-[30px]">
+<section class="bg-[#F0FDF4] p-4 md:p-10">
 
-<h1 class="font-semibold text-2xl flex justify-center items-center pt-[100px]">Choose Your Trees</h1>
-<section class="mx-[40pxpx]  h-screen">
-<div class="grid grid-cols-1 md:grid-cols-[1fr_3fr_1fr]">
+<h1 class="font-semibold text-2xl flex justify-center items-center pt-10 md:pt-20">Choose Your Trees</h1>
+
+<section class="grid grid-cols-1 md:grid-cols-[1fr_3fr_1fr] gap-[20px]">
 
 <!-- Left  -->
-<div id="image_Container" class="space-y-[16px] p-2">
+<div  class="space-y-[16px] p-2">
 <h2 class="font-semibold text-[20px]" >Categories</h2>
-<!-- <p class="bold text-white bg-[#15803D] w-[200px] rounded-[5px] py-[8px] px-[10px] ">All Trees</p> -->
-<div id="button_container">
+<!-- Button Container  -->
+
+<div id="button_container"  class="flex flex-col gap-[10px]">  </div>
 
 </div>
-</div>
-
 
 <!-- Middle  -->
-<div class="">
-
-  <!-- Middle Section Cards -->
-<div class="">
-  <!-- Card One -->
-  <div id="card_container" class="grid grid-cols-1 md:grid-cols-3  p-[16px] gap-[30px] ">
-
-<!-- /// Card Will Load Here Dynamically  -->
+<section>
+  <div id="card_container" class="grid grid-cols-1 md:grid-cols-3 gap-[30px]"> 
 
   </div>
-</div>
+</section>
 
+<!-- Dynamically Card Load  -->
 
-</div>
+<section class="bg-white max-w-[250px] mx-auto shadow rounded-lg p-[15px]">
+<h2 class="font-semibold">Your Cart</h2>
+<div id="cart_items">No Items Yet.</div>
+<hr>
+<p id="cart_total" class="mt-2 font-semibold">Total: ৳0</p>
+</section>  
 
- <!-- Right  -->
- <div class="bg-white gap-[30px] -mr-[10px] w-full max-w-[250px] mx-auto">
-  <h1>Your Cart</h1>
-  <div></div>
-
- </div>
-
-</div>
 </section>
 </section>
+ 
+<!-- Modal  -->
+
+ <div id="modal" class="fixed inset-0 bg-black/20 backdrop-blur-sm hidden  flex items-center justify-center">
+    <div class="bg-white p-[20px] rounded-lg max-w-lg w-full relative">
+      <span id="close_modal" class="absolute top-2 right-4 cursor-pointer text-xl font-bold">&times;</span>
+      <div id="modal_content"></div>
+    </div>
+  </div>
+
+
 <!-- About Campaign  -->
 <section class="bg-[#F0FDF4] md:m-[150px]">
   <h1 class="flex justify-center items-center font-bold text-[32px] ">About the Campaign</h1>
@@ -127,20 +128,20 @@ generations.</p>
 <!-- Our Impact  -->
 <section class="bg-[#CFF0DC]">
 <h1 class="flex text-[32px] font-semibold justify-center items-center text-[#1F2937] pt-6">Our Impact</h1>
-<div class="flex flex-col md:flex-row justify-center md:justify-between gap-[30px] p-4 py-6 px-10 mt-[40px]">
- <div id="one" class="bg-white w-full max-w-[500px] h-[150px] md:h-[150px] mx-auto shadow-[0_1px_3px_0_rgba(0,0,0,0.1),0_1px_2px_0_rgba(0,0,0,0.06)] rounded-xl flex justify-center items-center " >
+<div class=" flex flex-col md:flex-row justify-center md:justify-between gap-[30px] p-4 py-6 px-10 mt-[40px]">
+ <div id="one" class="hover:bg-green-200 bg-white w-full max-w-[500px] h-[150px] md:h-[150px] mx-auto shadow-[0_1px_3px_0_rgba(0,0,0,0.1),0_1px_2px_0_rgba(0,0,0,0.06)] rounded-xl flex justify-center items-center " >
   <div>
   <h1 class="text-[32px] font-bold text-[#15803D]">500K+</h1> 
-  <p class="text-[#1F2937] ">Trees Planted</p>
+  <p class="text-[#1F2937]">Trees Planted</p>
  </div>
 </div>
- <div id="two" class="bg-white w-full max-w-[500px] h-[150px] md:h-[150px] mx-auto shadow-[0_1px_3px_0_rgba(0,0,0,0.1),0_1px_2px_0_rgba(0,0,0,0.06)] rounded-xl flex justify-center items-center" >
+ <div id="two" class="hover:bg-green-200 bg-white w-full max-w-[500px] h-[150px] md:h-[150px] mx-auto shadow-[0_1px_3px_0_rgba(0,0,0,0.1),0_1px_2px_0_rgba(0,0,0,0.06)] rounded-xl flex justify-center items-center" >
   <div>
   <h1 class="text-[32px] font-bold text-[#15803D]">120+</h1> 
   <p class="text-[#1F2937] ">Communities Involved</p>
  </div>
 </div>
- <div id="three" class="bg-white w-full max-w-[500px] h-[150px] md:h-[150px] mx-auto shadow-[0_1px_3px_0_rgba(0,0,0,0.1),0_1px_2px_0_rgba(0,0,0,0.06)] rounded-xl flex justify-center items-center" >
+ <div id="three" class="hover:bg-green-200 bg-white w-full max-w-[500px] h-[150px] md:h-[150px] mx-auto shadow-[0_1px_3px_0_rgba(0,0,0,0.1),0_1px_2px_0_rgba(0,0,0,0.06)] rounded-xl flex justify-center items-center" >
   <div>
   <h1 class="text-[32px] font-bold text-[#15803D]">30+</h1> 
   <p class="text-[#1F2937] ">Countries Reached</p>
@@ -182,6 +183,7 @@ generations.</p>
 <div class="w-full h-[80px] bg-[#14532D] ">
 <h2 class="text-white flex justify-center items-center p-6">© 2025 Green Earth. All Rights Reserved.</h2>
 </div>
+
 <script src="./index.js"></script>
 </body>
 </html>
